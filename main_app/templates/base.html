@@ -1,6 +1,7 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,18 +13,29 @@
     <script src="{% static 'scripts/app.js' %}" defer></script>
     <title>Wayfarer</title>
 </head>
+
 <body>
     <nav class="navbar is-black" role="navigation" aria-label="main navigation">
         <h1>Wayfarer</h1>
         <div class="navbar-brand">
-            <!-- Search Bar? -->
-            <a class="navbar-item" href="/">Sign In</a>
-            <a class="navbar-item" href="/">Sign Up (Profile)</a>
-            <!-- Profile link? -->
+           
+        {% if user.is_authenticated %}<span class="navbar-item">Welcome: {{user.username}}</span>
+            <a class="navbar-item" href="/">Home</a>
+            <a class="navbar-item" href="/profile">Profile</a>
+            <a class="navbar-item" href="{% url 'logout' %}">Logout</a>
+            </div>
+            {% else %}
+            <div class="navbar-menu navbar-end">
+                <a class="navbar-item" href="{% url 'login' %}">Log In</a>
+                <a class="navbar-item" href="{% url 'signup' %}">Sign Up</a>
+            </div>
+            {% endif %}
+    
         </div>
-    </nav>
-    <div class="container">
 
+    </nav>
+    
+    <div class="container">
         {% block content %}
         <!-- Other pages will add page specific content here -->
         <!-- The page content will be dynamically created here -->
@@ -31,4 +43,5 @@
         {% endblock %}
     </div>
 </body>
+
 </html>
