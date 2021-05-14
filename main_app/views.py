@@ -37,6 +37,12 @@ class UserProfileList(TemplateView):
         return context
 
 
+
+
+
+
+
+
 class Signup(View):
 
     def get(self, request):
