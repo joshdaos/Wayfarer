@@ -6,9 +6,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% block head %} {% endblock %}
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
     <link rel="stylesheet" href="{% static 'styles/main.css' %}">
-    <script src="{% static 'scripts/main.js' %}" defer></script>
+    <!--  -->
+    <script src="{% static 'scripts/app.js' %}" defer></script>
     <title>Wayfarer</title>
 </head>
 
@@ -41,6 +43,9 @@
         <!-- The page content will be dynamically created here -->
         <!-- No need to actually add anything here -->
 
+        <!-- Other pages will add page specific content here -->
+        <!-- The page content will be dynamically created here -->
+        <!-- No need to actually add anything here -->
         {% endblock %}
     </div>
 </body>
