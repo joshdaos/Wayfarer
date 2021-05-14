@@ -34,3 +34,12 @@ body {
     width: 250px;
     font-size: small;
 }
+
+.carousel_item {
+    height: 250px;
+    width: 250px;
+}
+
+.carousel_img {
+    border-radius: 10px;
+}

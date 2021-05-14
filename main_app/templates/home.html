@@ -1,5 +1,6 @@
 {% extends 'base.html' %}
-
+<link href="~bulma-carousel/dist/css/bulma-carousel.main.css" rel="stylesheet">
+<script src="~bulma-carousel/dist/js/bulma-carousel.app.js"></script>
 {% block content %}
 
 <!-- Pic Carousel here -->
@@ -7,14 +8,17 @@
 <section class="carousel_section">
     <div class="carousel_container">
         <div class="carousel"></div>
-            <div class="item-1">Carousel Pic Test
+            <div class="carousel_item">
                 <!-- Carousel Item 1 -->
+                <img class="carousel_img" src="http://main2seattle.files.wordpress.com/2010/12/seattle-skyline-istock.jpg" alt="Seattle">
             </div>
-            <div class="item-2">Carousel Pic Test
+            <div class="carousel_item">
                 <!-- Carousel Item 2 -->
+                <img class="carousel_img" src="https://cdn.vox-cdn.com/uploads/chorus_asset/file/19540196/GettyImages_566036061_1_.jpg" alt="L.A.">
             </div>
-            <div class="item-3">Carousel Pic Test
+            <div class="carousel_item">
                 <!-- Carousel Item 3 -->
+                <img  class="carousel_img"src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyANtgfEfFnvr09x24ZaX1mO5X6B6hRSrVWA&usqp=CAU" alt="Bay Area">
             </div>
         </div>
     </div>
