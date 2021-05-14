@@ -2,6 +2,23 @@
 
 {% block content %}
 
-<h1>Profile list place holder text</h1>
-            
+<h1 class="title">Profile Page</h1>
+<div class="gallery">
+    {% for profile in profiles %}
+    <a href="">
+        <div class="card">
+            <div class="card-image">
+                <figure class="image is-square">
+                    <img src="{{profile.image}}" alt="{{profile.name}}" />
+                </figure>
+            </div>
+            <div class="card-header">
+                <p class="card-header-title">{{profile.name}}</p>
+                <p class="card-header-title">Join Date: {{profile.join_date}}</p>
+            </div>
+        </div>
+    </a>
+    {% endfor %}
+</div>
+
 {% endblock %}
