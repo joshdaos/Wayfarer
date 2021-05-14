@@ -22,5 +22,5 @@ class UserProfileList(TemplateView):
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         # Here we are using the model to query the database for us.
-        context["profile"] = UserProfile.objects.all()
+        context["profiles"] = UserProfile.objects.all()
         return context
