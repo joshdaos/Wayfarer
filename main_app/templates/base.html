@@ -11,9 +11,13 @@
     <title>Wayfarer</title>
 </head>
 <body>
-    <nav class="navbar">
-        <div class="navbar">
-            
+    <nav class="navbar is-black" role="navigation" aria-label="main navigation">
+        <h1>Wayfarer</h1>
+        <div class="navbar-brand">
+            <!-- Search Bar? -->
+            <a class="navbar-item" href="/">Sign In</a>
+            <a class="navbar-item" href="/">Sign Up (Profile)</a>
+            <!-- Profile link? -->
         </div>
     </nav>
     <div class="container">
@@ -21,6 +25,9 @@
         {% block content %}
         
         <!-- Other pages will add page specific content here -->
+        <!-- The page content will be dynamically created here -->
+        <!-- No need to actually add anything here -->
+        <!-- The "{% extends 'base.html' %}" will add the navbar/link all the css and js to all pages, it also needs to be at the top of all other .html files -->
 
         {% endblock %}
     </div>
