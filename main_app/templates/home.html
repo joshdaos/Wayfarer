@@ -1,10 +1,14 @@
 {% extends 'base.html' %}
-<link href="~bulma-carousel/dist/css/bulma-carousel.main.css" rel="stylesheet">
-<script src="~bulma-carousel/dist/js/bulma-carousel.app.js"></script>
+{% block head %}
+
+<link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+<link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
+
+{% endblock %}
+
 {% block content %}
 
-<!-- Pic Carousel here -->
-<!-- Bulma carousel link https://bulma-carousel.onrender.com/ -->
+<!-- Carousel Docs https://owlcarousel2.github.io/OwlCarousel2/ -->
 <section class="carousel_section">
     <div class="carousel_container">
         <div class="carousel"></div>
