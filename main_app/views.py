@@ -9,6 +9,10 @@ from django.utils.decorators import method_decorator
 
 
 from .models import UserProfile
+from django.contrib.auth import login
+from django.contrib.auth.forms import UserCreationForm
+from django.contrib.auth.decorators import login_required
+from django.utils.decorators import method_decorator
 
 # Create your views here.
 
@@ -34,17 +38,17 @@ class UserProfileList(TemplateView):
             context["header"] = f"Searching for {name}"
         else:
             context["profiles"] = UserProfile.objects.filter(user=self.request.user)
-            context["header"] = "Profile page"
+            context["header"] = "Profile Page"
         return context
 
 
+
 class Signup(View):
-    # show a form to fill out 
+
     def get(self, request):
         form = UserCreationForm()
         context = {"form": form}
         return render(request, "registration/signup.html", context)
-    # on form ssubmit validate the form and login the user. 
     def post(self, request):
         form = UserCreationForm(request.POST)
         if form.is_valid():
@@ -53,4 +57,3 @@ class Signup(View):
             return redirect("profile_list")
         else:
             return redirect("signup")
-

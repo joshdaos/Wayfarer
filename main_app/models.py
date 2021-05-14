@@ -12,7 +12,6 @@ class UserProfile(models.Model):
     join_date = models.DateField(default=date.today())
     image = models.CharField(max_length=500)
     user = models.ForeignKey(User, on_delete=models.CASCADE)
-    
 
     def __str__(self):
         return self.name
