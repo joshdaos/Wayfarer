@@ -1,5 +1,45 @@
-.profileimage{
-width:300px;
-height: 200px;
-border-radius: 50%;
+body {
+    background-color: #EFF8FF;
+    min-height: 100vh;
+}
+
+.carousel_container {
+    display: flex;
+    justify-content: space space-evenly;
+    align-content: space-between;
+    flex-direction: row;
+    margin: 50px;
+}
+
+.topic_container {
+    display: flex;
+    justify-content: space space-evenly;
+    align-content: space-between;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 100px;
+    margin: 0 125px 0 125px;
+}
+
+.topic {
+    color: #000000;
+    flex-direction: column;
+    height: 50px;
+    font-size: x-large;
+}
+
+.topic_p {
+    color: #000000;
+    height: 50px;
+    width: 250px;
+    font-size: small;
+}
+
+.carousel_item {
+    height: 250px;
+    width: 250px;
+}
+
+.carousel_img {
+    border-radius: 10px;
 }

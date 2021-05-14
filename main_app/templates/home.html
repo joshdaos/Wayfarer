@@ -1,11 +1,32 @@
 {% extends 'base.html' %}
+{% block head %}
+
+<link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+<link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
+
+{% endblock %}
 
 {% block content %}
 
-<!-- Pic Slide show here -->
-    <div class="slide_show">
-        <img src="https://www.google.com/search?q=Seattle+skyline&rlz=1C5CHFA_enUS943US943&sxsrf=ALeKk017DX2XTsr_EUUk3aDWTyiAdYQaCg:1621015203486&tbm=isch&source=iu&ictx=1&fir=_FF2lOwu5JmDcM%252C72XmQacB_3tQXM%252C_&vet=1&usg=AI4_-kTIqUadPsOAHv-310TyaizxrbC4wQ&sa=X&ved=2ahUKEwim9YOb4MnwAhUOvJ4KHcuiBJ4Q9QF6BAgGEAE#imgrc=_FF2lOwu5JmDcM" alt="Seattle">
+<!-- Carousel Docs https://owlcarousel2.github.io/OwlCarousel2/ -->
+<section class="carousel_section">
+    <div class="carousel_container">
+        <div class="carousel"></div>
+            <div class="carousel_item">
+                <!-- Carousel Item 1 -->
+                <img class="carousel_img" src="http://main2seattle.files.wordpress.com/2010/12/seattle-skyline-istock.jpg" alt="Seattle">
+            </div>
+            <div class="carousel_item">
+                <!-- Carousel Item 2 -->
+                <img class="carousel_img" src="https://cdn.vox-cdn.com/uploads/chorus_asset/file/19540196/GettyImages_566036061_1_.jpg" alt="L.A.">
+            </div>
+            <div class="carousel_item">
+                <!-- Carousel Item 3 -->
+                <img  class="carousel_img"src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyANtgfEfFnvr09x24ZaX1mO5X6B6hRSrVWA&usqp=CAU" alt="Bay Area">
+            </div>
+        </div>
     </div>
+</section>
     <div class="topic_container">
         <h2 class="topic">Topic</h2>
             <p class="topic_p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem quae iste ea praesentium incidunt consequuntur corporis labore vel unde nesciunt veritatis cupiditate magnam neque impedit ad, eius ipsa voluptatibus illo!</p>
