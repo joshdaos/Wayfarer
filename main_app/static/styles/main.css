@@ -1,6 +1,24 @@
-.navbar-item {
+.webtitle {
+    margin-top: 13px;
+    margin-left: 40px;
+}
+
+.navbar-end {
+    margin-left: 1350px;
+}
+.wayfarer-logo {
+    background-size: contains;
+    height: 300px;
+}
+
+/*.navbar-item {
     margin-right: 1290px;
 }
+.navbar-brand {
+    background-color: orange;
+}
+
 .webtitle{
     margin-top: 14px;
 }
+*/
