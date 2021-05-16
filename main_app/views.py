@@ -2,6 +2,12 @@ from django.shortcuts import render, redirect
 from django.views import View
 from django.http import HttpResponse
 from django.views.generic.base import TemplateView
+from django.contrib.auth import login
+from django.contrib.auth.forms import UserCreationForm
+from django.contrib.auth.decorators import login_required
+from django.utils.decorators import method_decorator
+
+
 from .models import UserProfile
 from django.contrib.auth import login
 from django.contrib.auth.forms import UserCreationForm
@@ -19,7 +25,6 @@ class Home(View):
 class Home(TemplateView):
     template_name = "home.html"
 
-
 @method_decorator(login_required, name='dispatch')
 class UserProfileList(TemplateView):
     template_name = "profile_list.html"
@@ -35,11 +40,6 @@ class UserProfileList(TemplateView):
             context["profiles"] = UserProfile.objects.filter(user=self.request.user)
             context["header"] = "Profile Page"
         return context
-
-
-
-
-
 
 
 
