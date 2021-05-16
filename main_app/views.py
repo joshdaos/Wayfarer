@@ -21,7 +21,6 @@ class Home(View):
 class Home(TemplateView):
     template_name = "home.html"
 
-
 @method_decorator(login_required, name='dispatch')
 class UserProfileList(TemplateView):
     template_name = "profile_list.html"
