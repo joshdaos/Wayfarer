@@ -3,14 +3,6 @@ body {
     min-height: 100vh;
 }
 
-.carousel_container {
-    display: flex;
-    justify-content: space space-evenly;
-    align-content: space-between;
-    flex-direction: row;
-    margin: 50px;
-}
-
 .topic_container {
     display: flex;
     justify-content: space space-evenly;
@@ -35,11 +27,7 @@ body {
     font-size: small;
 }
 
-.carousel_item {
-    height: 250px;
-    width: 250px;
-}
-
-.carousel_img {
-    border-radius: 10px;
+.item {
+    height: 300px;
+    width: 200px;
 }
