@@ -17,9 +17,9 @@
 </head>
 
 <body>
-    <nav class="navbar is-black" role="navigation" aria-label="main navigation">
+
+    <nav class="navbar" role="navigation" aria-label="main navigation">
         <h1 class="webtitle">Wayfarer</h1>
-        <i class="fas fa-umbrella-beach"></i>
         <!--Navbar-->
 
         <div class="navbar-brand">
@@ -27,6 +27,14 @@
             <a class="navbar-item" href="/">Home</a>
             <a class="navbar-item" href="/profile">Profile</a>
             <a class="navbar-item" href="{% url 'logout' %}">Logout</a>
+        </div>
+
+        {% else %}
+        <div class="navbar-menu navbar-end">
+            <a class="navbar-item" href="{% url 'login' %}">Log In</a>
+            <a class="navbar-item" href="{% url 'signup' %}">Sign Up</a>
+        </div>
+        {% endif %}
         </div>
         {% else %}
         <div class="navbar-menu navbar-end">
@@ -38,6 +46,18 @@
         </div>
 
     </nav>
+    <div class="container">
+        {% block content %}
+        <!-- Other pages will add page specific content here -->
+        <!-- The page content will be dynamically created here -->
+        <!-- No need to actually add anything here -->
+        {% endblock %}
+    </div>
+    {% block footer %} {% endblock %}
+    <script src="{% static 'scripts/jquery.js' %}" type="text/javascript" defer></script>
+    <script src="{% static 'scripts/owl.carousel.min.js' %}" type="text/javascript" defer></script>
+    <script src="{% static 'scripts/app.js' %}" type="text/javascript" defer></script>
+
 </body>
 
 <div class="container">

@@ -1,8 +1,17 @@
-body {
-    background-color: #EFF8FF;
-    min-height: 100vh;
-}
 
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
+body {
+    font-family: 'Comfortaa', cursive;
+}
+.webtitle {
+    margin-top: 
+}
+.navbar {
+    background-color: orange;
+    }
+.navbar-end {
+    margin-left: 1360px;
+    }
 .topic_container {
     display: flex;
     justify-content: space space-evenly;
@@ -11,13 +20,6 @@ body {
     flex-wrap: wrap;
     height: 100px;
     margin: 0 125px 0 125px;
-}
-
-.topic {
-    color: #000000;
-    flex-direction: column;
-    height: 50px;
-    font-size: x-large;
 }
 
 .topic_p {
@@ -30,4 +32,7 @@ body {
 .item {
     height: 200px;
     width: 400px;
+}
+.navbar {
+background-color: orange;
 }
