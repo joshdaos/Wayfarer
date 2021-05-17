@@ -49,6 +49,9 @@ body {
 }
 .home-page-images {
     margin-top: 50px;
+    width: auto;
+    height: 350px;
+    margin-bottom: 80px;
 }
 .topic_p {
     color: #000000;
@@ -85,6 +88,8 @@ background-color: orange;
 
 #owl-slider .item #owl-pic {
     display: block;
-    width: 100%;
-    height: 300px;
+    width: 90%;
+    height: 350px;
+    padding: 0 20px 0 100px;
 }
+
