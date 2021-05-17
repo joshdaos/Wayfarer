@@ -20,6 +20,7 @@ $(document).ready(function(){
       navigation : true,
       slideSpeed : 300,
       paginationSpeed : 400,
-      singleItem:true
+      singleItem:true,
+      items:1,
     });
   });
