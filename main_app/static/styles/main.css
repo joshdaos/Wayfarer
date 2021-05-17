@@ -1,8 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mali:wght@200&family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mali:wght@200&family=Nunito:wght@200&family=Ubuntu:wght@300&display=swap');
 body {
-    font-family: 'Comfortaa', cursive;
+    font-family: 'Nunito', sans-serif;
 }
-
+.navbar-end {
+    display: flex;  
+    margin-left: 1100px;
+    }
 .navbar {
     background-color: orange;
     height: 100px;
@@ -21,6 +25,9 @@ body {
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    height: 100px;
+    font-size: large;
+    font-family: 'Ubuntu', sans
 }
 
 .navbar_logo {
@@ -35,6 +42,7 @@ body {
 
 .webtitle {
     font-weight: bold;
+    font-family: 'Ubuntu', sans
 }
 
 .navbar_img {
