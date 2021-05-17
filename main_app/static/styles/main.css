@@ -93,7 +93,7 @@ body {
 
 .card {
     margin-top: 25px;
-    width: 200px;
+    width: 400px;
     height: 100px;
 }
 
@@ -114,4 +114,23 @@ body {
     height: 350px;
     padding: 0 20px 0 100px;
 }
+.card-header-title {
+    padding: 10px;
+    background-color: #eec89f;
+}
+
+.buttons {
+    padding-left: 50px;
+}
+
+div.card-header {
+    background-color: #eec89f;
+}
+
+a.button.is-info {
+    background-color: orange;
+}
+
+ 
+
 
