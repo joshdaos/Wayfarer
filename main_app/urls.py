@@ -1,3 +1,4 @@
+from main_app.models import Posts
 from django.urls import path, include
 from . import views
 

@@ -26,14 +26,24 @@ body {
     font-size: small;
 }
 
-.item {
-    height: 200px;
-    width: 400px;
-}
-.navbar {
-background-color: orange;
+.carousel_item {
+    height: 250px;
+    width: 250px;
 }
 
-.icons-credit {
-    margin-top: 550px;
+.carousel_img {
+    border-radius: 10px;
+}
+.card{
+    
+    margin-top: auto;
+    width: 200px;
+    height: 100px;
+}
+
+.posts{
+    padding: 20px;
+    
+ 
+    
 }
