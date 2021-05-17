@@ -146,3 +146,16 @@ body {
     /* text-color: ; */
 }
 
+.buttons {
+    padding-left: 50px;
+}
+
+div.card-header {
+    background-color: #eec89f;
+}
+
+a.button.is-info {
+    background-color: orange;
+}
+
+
