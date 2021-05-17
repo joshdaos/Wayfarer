@@ -35,8 +35,6 @@ body {
     align-content: space-between;
     flex-direction: row;
     height: 100px;
-    margin: 0 125px 0 125px;
-    margin-top: -10px;
 }
 .wayfarer-intro {
     display: flex;
@@ -73,6 +71,15 @@ body {
     padding: 20px;
     margin-top: 10px;
     font-size: large;
+    margin-top: 10px;
+}
+
+.item {
+    height: 200px;
+    width: 400px;
+}
+.navbar {
+background-color: orange;
 }
 
 .profile_title {
