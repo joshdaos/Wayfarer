@@ -11,6 +11,7 @@ class UserProfile(models.Model):
     currentcity = models.CharField(max_length=500)
     join_date = models.DateField(default=date.today())
     image = models.CharField(max_length=500)
+    # for user for login 
     user = models.ForeignKey(User, on_delete=models.CASCADE)
 
     def __str__(self):
@@ -21,7 +22,6 @@ class UserProfile(models.Model):
 
 class Posts(models.Model):
 
-    name = models.CharField(max_length=100)
     title= models.CharField(max_length=100)
     content = models.CharField(max_length=250)
     comments = models.CharField(max_length=500)

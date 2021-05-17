@@ -41,28 +41,6 @@ class UserProfileList(TemplateView):
 
 
 
-
-class PostsDetail(DetailView):
-    model = UserProfile
-    template_name = "profile_detail.html"
-    
-
-class PostsCreate(View):
-
-    def post(self, request, pk):
-        name = request.POST.get("name")
-        title = request.POST.get("title")
-        content = request.POST.get("content")
-        image = request.POST.get("image")
-        comments = request.POST.get("comments")
-        userprofile = UserProfile.objects.get(pk=pk)
-        Posts.objects.create(title=title, content=content, name=name)
-        return redirect('user_detail', pk=pk)
-
-
-
-
-
 class Signup(View):
 
     def get(self, request):
