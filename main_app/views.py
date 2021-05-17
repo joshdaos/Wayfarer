@@ -23,22 +23,16 @@ class Home(TemplateView):
 
 @method_decorator(login_required, name='dispatch')
 class UserProfileList(TemplateView):
-    template_name = "profile_list.html"
+    template_name = "profile_detail.html"
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         # Here we are using the model to query the database for us.
-        context["profiles"] = UserProfile.objects.all()
+        context["profile"] = UserProfile.objects.get(user=self.request.user)
         return context
 
 
 
-class PostsList(TemplateView):
-    template_name = "profile_list.html"
-    def get_context_data(self, **kwargs):
-        context = super().get_context_data(**kwargs)
-        context["posts"] = Posts.objects.all() # Here we are using the model to query the database for us.
-        return context
 
       
 
