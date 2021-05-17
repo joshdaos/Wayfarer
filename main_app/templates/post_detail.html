@@ -1,24 +1,13 @@
 {% extends 'base.html' %}
 {% block content %}
-<h1 class="profile_title">Post</h1>
-<div class="profile_container">
-    <div class="gallery">
-        <a href="">
-            <div class="card">
-                <div class="card-image">
-                    <figure class="image is-square">
-                        <img class="profileimage" src="{{posts.image}}" alt="{{posts.userprofile}}" />
-                    </figure>
-                </div>
-                <div class="card-header">
-                    <ul>
-                        <li class="card-header-title">Name: {{posts.userprofile}}</li>
-                        <li class="card-header-title">Title: {{posts.title}}</li>
-                        <li class="card-header-title">Content:<br> {{posts.content}}</li>
-                    </ul>
-                </div>
-            </div>
-        </a>
-    </div>      
+<div class="post_container">
+    <div class="post_info">
+        <div class="content_container">
+            <h1 class="post_title">{{posts.title}}</h1>
+                <img class="post_image" src="{{posts.image}}" alt="{{posts.userprofile}}" />
+                    <h3 class="post_user">{{posts.userprofile}}</h3>
+        </div>
+    </div>
+    <p class="post_content">{{posts.content}}</p>
 </div>
 {% endblock %}

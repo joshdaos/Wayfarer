@@ -3,29 +3,19 @@
 body {
     font-family: 'Nunito', sans-serif;
 }
-.navbar-end {
-    display: flex;  
-    margin-left: 1100px;
-    }
+
 .navbar {
     background-color: orange;
-    height: 100px;
+    height: 75px;
     font-size: large;
     display: flex;
     font-weight: bold;
-}
-
-.navbar-burger {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
 }
 
 .navbar_links {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    height: 100px;
     font-size: large;
     font-family: 'Ubuntu', sans
 }
@@ -38,6 +28,7 @@ body {
     align-items: center;
     margin: 0 10px 0 10px;
     font-weight: bold;
+    font-size: x-large;
 }
 
 .webtitle {
@@ -61,6 +52,7 @@ body {
     flex-direction: row;
     height: 100px;
 }
+
 .wayfarer-intro {
     display: flex;
     justify-content: center;
@@ -68,18 +60,21 @@ body {
     font-size: x-large;
     margin-bottom: 20px;
 }
+
 .topic {    
     display: flex;
     justify-content: center;
     margin-top: 15px;
     margin-left: -210px;
 }
+
 .home-page-images {
     margin-top: 50px;
     width: auto;
     height: 350px;
     margin-bottom: 80px;
 }
+
 .topic_p {
     color: #000000;
     width: 250px;
@@ -114,23 +109,40 @@ body {
     height: 350px;
     padding: 0 20px 0 100px;
 }
-.card-header-title {
-    padding: 10px;
-    background-color: #eec89f;
+
+.post_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: 'Nunito', sans-serif;
 }
 
-.buttons {
-    padding-left: 50px;
+.post_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: left;
 }
 
-div.card-header {
-    background-color: #eec89f;
+.post_content {
+    font-size: larger;
+    margin: 20px 0 0 50px;
+    max-width: 350px;
 }
 
-a.button.is-info {
-    background-color: orange;
+.post_image {
+    max-width: 500px;
+    max-height: 500px;
+    border-radius: 10px;
+    margin: 20px 0;
+    
 }
 
- 
-
+.post_title {
+    font-size: xx-large;
+    font-weight: bold;
+    margin: 20px 0 0 0;
+    /* text-color: ; */
+}
 
