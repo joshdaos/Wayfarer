@@ -11,7 +11,7 @@ body {
     margin-left: 700px;
     }
 .webtitle {
-        margin-top: 12px;
+        margin-top: 14px;
         margin-left: 70px;
     }
 .topic_container {
@@ -22,8 +22,21 @@ body {
     flex-wrap: wrap;
     height: 100px;
     margin: 0 125px 0 125px;
+    margin-top: -10px;
+}
+.wayfarer-intro {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.topic {    
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    margin-left: -210px;
 }
 .home-page-images {
+    display: flex;
     margin-top: 50px;
 }
 .topic_p {
@@ -31,6 +44,7 @@ body {
     height: 50px;
     width: 250px;
     font-size: small;
+    margin-top: 10px;
 }
 
 .item {
