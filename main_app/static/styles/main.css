@@ -8,6 +8,7 @@ body {
     height: 100px;
     font-size: large;
     display: flex;
+    font-weight: bold;
 }
 
 .navbar-burger {
@@ -29,6 +30,11 @@ body {
     justify-content: flex-start;
     align-items: center;
     margin: 0 10px 0 10px;
+    font-weight: bold;
+}
+
+.webtitle {
+    font-weight: bold;
 }
 
 .navbar_img {
