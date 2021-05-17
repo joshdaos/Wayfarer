@@ -1,40 +1,36 @@
 {% extends 'base.html' %}
-{% block head %}
-
-<link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
-<link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
-
-{% endblock %}
+{% block head %} {% endblock %}
 
 {% block content %}
 
 <!-- Carousel Docs https://owlcarousel2.github.io/OwlCarousel2/ -->
-<section class="carousel_section">
-    <div class="carousel_container">
-        <div class="carousel"></div>
-            <div class="carousel_item">
-                <!-- Carousel Item 1 -->
-                <img class="carousel_img" src="http://main2seattle.files.wordpress.com/2010/12/seattle-skyline-istock.jpg" alt="Seattle">
-            </div>
-            <div class="carousel_item">
-                <!-- Carousel Item 2 -->
-                <img class="carousel_img" src="https://cdn.vox-cdn.com/uploads/chorus_asset/file/19540196/GettyImages_566036061_1_.jpg" alt="L.A.">
-            </div>
-            <div class="carousel_item">
-                <!-- Carousel Item 3 -->
-                <img  class="carousel_img"src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyANtgfEfFnvr09x24ZaX1mO5X6B6hRSrVWA&usqp=CAU" alt="Bay Area">
-            </div>
-        </div>
-    </div>
-</section>
-    <div class="topic_container">
-        <h2 class="topic">Topic</h2>
-            <p class="topic_p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem quae iste ea praesentium incidunt consequuntur corporis labore vel unde nesciunt veritatis cupiditate magnam neque impedit ad, eius ipsa voluptatibus illo!</p>
-            
-        <h2 class="topic">Topic</h2>
-            <p class="topic_p">Lorem ipsum dolor sit amet consectetur adipisicing elit. In reprehenderit voluptas inventore aspernatur est sit veniam dolorum animi voluptatum! Sed consectetur dolores quas maxime quibusdam quaerat dolor voluptas, distinctio odio?</p>
-            
-        <h2 class="topic">Topic</h2>
-            <p class="topic_p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur ipsa quos vero, optio vitae ullam voluptatibus maiores nobis non fugit nemo sapiente, facere recusandae. Molestias deleniti quod tenetur incidunt corporis?</p>
-    </div>
+
+<div class="owl-carousel owl-theme">
+    <div class="item"><img src="static/images/LA-skyline.jpeg" alt="Los Angeles"></div>
+    <div class="item"><img src="static/images/miami-skyline.jpeg" alt="Miami"></div>
+    <div class="item"><img src="static/images/Seattle-skyline.jpeg" alt="Seattle"></div>
+    <div class="item"><img src="static/images/SF-skyline.jpeg" alt="San Fransico"></div>
+    <div class="item"><img src="static/images/London-skyline.jpeg" alt="London"></div>
+    <div class="item"><img src="static/images/Dubai-skyline.jpeg" alt="Dubai"></div>
+    <div class="item"><img src="static/images/Sydney-skyline.jpeg" alt="Sydney"></div>
+    <div class="item"><img src="static/images/NYC-skyline.jpeg" alt="New York City"></div>
+</div>
+
+<div class="topic_container">
+    <h2 class="topic">Topic</h2>
+    <p class="topic_p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem quae iste ea praesentium
+        incidunt consequuntur corporis labore vel unde nesciunt veritatis cupiditate magnam neque impedit ad, eius ipsa
+        voluptatibus illo!</p>
+
+    <h2 class="topic">Topic</h2>
+    <p class="topic_p">Lorem ipsum dolor sit amet consectetur adipisicing elit. In reprehenderit voluptas inventore
+        aspernatur est sit veniam dolorum animi voluptatum! Sed consectetur dolores quas maxime quibusdam quaerat dolor
+        voluptas, distinctio odio?</p>
+
+    <h2 class="topic">Topic</h2>
+    <p class="topic_p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur ipsa quos vero, optio vitae
+        ullam voluptatibus maiores nobis non fugit nemo sapiente, facere recusandae. Molestias deleniti quod tenetur
+        incidunt corporis?</p>
+</div>
+
 {% endblock %}

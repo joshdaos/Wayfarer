@@ -1,6 +1,21 @@
 {% extends 'base.html' %}
 {% block content %}
 <h1 class="title">Profile Page</h1>
+<div class="posts">
+    <h3>Posts</h3>
+    {% for post in profile.posts.all %}
+    <div>
+        <ul>
+            <li>{{forloop.counter}}</li>
+            <li><b>{{post.name}}</b></li>
+            <li><b>{{post.title}}</b></li>
+        </ul>
+        <!-- <a class="button is-dark" href="{% url 'profile_detail' %}">See Post!</a> -->
+    </div>
+    {% empty %}
+    <h3>No Posts Available Yet</h3>
+    {% endfor %}
+</div>
 <div class="gallery">
     {% for profile in profiles %}
     <a href="">
@@ -11,24 +26,15 @@
                 </figure>
             </div>
             <div class="card-header">
-                <p class="card-header-title">{{profile.name}}</p>
-                <p class="card-header-title">Current City: {{profile.currentcity}}</p>
-                <p class="card-header-title">Join Date: {{profile.join_date}}</p>
+                <ul>
+                <li class="card-header-title">{{profile.name}}</li>
+                <li class="card-header-title">Current City: {{profile.currentcity}}</li>
+                <li class="card-header-title">Join Date: {{profile.join_date}}</li>
+                </ul>
             </div>
         </div>
     </a>
     {% endfor %}
-    <div class="detail__songs mb-5">
-        <h3 class="title is-3">Posts</h3>
-        {% for post in profile.posts.all %}
-        <div class="song">
-            <span>{{forloop.counter}}</span>
-            <span><b>{{post.title}}</b></span>
-            <a class="button is-dark" href="{% url 'profile_detail' %}">See Post!</a>
-        </div>
-        {% empty %}
-        <h3 class="title is-4">No Posts Available Yet</h3>
-        {% endfor %}
-    </div>
 </div>
+
 {% endblock %}

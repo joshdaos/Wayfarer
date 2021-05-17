@@ -1,16 +1,11 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
 body {
-    background-color: #EFF8FF;
-    min-height: 100vh;
+    font-family: 'Comfortaa', cursive;
 }
-
-.carousel_container {
-    display: flex;
-    justify-content: space space-evenly;
-    align-content: space-between;
-    flex-direction: row;
-    margin: 50px;
-}
-
+.navbar {
+    background-color: orange;
+    }
 .topic_container {
     display: flex;
     justify-content: space space-evenly;
@@ -20,12 +15,8 @@ body {
     height: 100px;
     margin: 0 125px 0 125px;
 }
-
-.topic {
-    color: #000000;
-    flex-direction: column;
-    height: 50px;
-    font-size: x-large;
+.navbar-end {
+    margin-left: 1340px;
 }
 
 .topic_p {
@@ -42,4 +33,17 @@ body {
 
 .carousel_img {
     border-radius: 10px;
+}
+.card{
+    
+    margin-top: auto;
+    width: 200px;
+    height: 100px;
+}
+
+.posts{
+    padding: 20px;
+    
+ 
+    
 }
