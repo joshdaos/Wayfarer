@@ -23,14 +23,14 @@
 </div>
 <div class="posts-title">
     <h3>Posts</h3>
-    {% for post in profile.posts.all %}
+    {% for post in userprofile.posts.all %}
     <div>
         <ul>
             <li>{{forloop.counter}}</li>
             <li><b>{{post.name}}</b></li>
             <li><b>{{post.title}}</b></li>
         </ul>
-        <a class="button is-dark" href="{% url 'profile_detail' %}">See Post!</a>
+        <!-- <a class="button is-dark" href="{% url 'profile_detail' %}">See Post!</a> -->
     </div>
     {% empty %}
     <h3>No Posts Available Yet</h3>
