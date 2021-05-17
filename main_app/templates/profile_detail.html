@@ -16,6 +16,14 @@
                         <li class="card-header-title">Current City: {{profile.currentcity}}</li>
                         <li class="card-header-title">Join Date: {{profile.join_date}}</li>
                     </ul>
+                    <div class="buttons">
+                        <!-- just like how we added the artist detail link we can do the same thing for update -->
+                        <a href="{% url 'profile_update' profile.pk %}" class="button is-info">
+                            <span class="icon">
+                                <i class="fas fa-edit"></i>
+                            </span>
+                        </a>
+                    </div>
                 </div>
             </div>
         </a>
@@ -25,9 +33,9 @@
         {% for post in profile.posts.all %}
         <div>
             <ul>
-                <li>{{forloop.counter}}</li>
-                <li><b>{{post.userprofile}}</b></li>
+                <a href="{% url 'post_detail' post.pk %}">
                 <li><b>{{post.title}}</b></li>
+                </a>
             </ul>
             <!-- <a class="button is-dark" href="{% url 'profile_detail' %}">See Post!</a> -->
         </div>
