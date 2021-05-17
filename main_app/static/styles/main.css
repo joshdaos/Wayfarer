@@ -9,6 +9,19 @@ body {
     }
 .navbar {
     background-color: orange;
+    height: 100px;
+    font-size: large;
+    display: flex;
+    font-weight: bold;
+}
+
+.navbar-burger {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.navbar_links {
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -24,6 +37,12 @@ body {
     justify-content: flex-start;
     align-items: center;
     margin: 0 10px 0 10px;
+    font-weight: bold;
+}
+
+.webtitle {
+    font-weight: bold;
+    font-family: 'Ubuntu', sans
 }
 
 .navbar_img {
@@ -46,6 +65,8 @@ body {
     display: flex;
     justify-content: center;
     align-content: center;
+    font-size: x-large;
+    margin-bottom: 20px;
 }
 .topic {    
     display: flex;
@@ -78,13 +99,8 @@ body {
 
 .posts {
     padding: 20px;
-    margin-top: 10px;
     font-size: large;
-    margin-top: 10px;
-}
-
-.navbar {
-background-color: orange;
+    margin: 10px 20px;
 }
 
 .profile_title {
