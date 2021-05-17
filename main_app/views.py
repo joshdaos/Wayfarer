@@ -42,7 +42,7 @@ class PostDetail(DetailView):
 @method_decorator(login_required, name='dispatch')
 class UserProfileUpdate(UpdateView):
      model = UserProfile
-     fields = ['name','currentcity','join_date','image']
+     fields = ['name','currentcity','image']
      template_name = "profile_update.html"
      success_url ="/profile/" 
 
