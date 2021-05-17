@@ -93,9 +93,9 @@ body {
 }
 
 .posts {
-    padding: 30px;
+    padding: 20px;
     font-size: large;
-    margin: 10px 30px;
+    margin: 10px 20px;
 }
 
 .profile_title {
@@ -145,4 +145,3 @@ body {
     margin: 20px 0 0 0;
     /* text-color: ; */
 }
-
