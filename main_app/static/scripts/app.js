@@ -16,5 +16,12 @@
 // });
 
 $(document).ready(function(){
-    $(".owl-carousel").owlCarousel();
+    $(".owl-carousel").owlCarousel({
+      nav:true,
+      slideSpeed : 300,
+      paginationSpeed : 400,
+      singleItem:true,
+      items:1,
+      loop:true,
+    });
   });
