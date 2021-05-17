@@ -38,6 +38,10 @@ class UserProfileList(TemplateView):
         return context
 
 
+
+
+
+
 class PostsDetail(DetailView):
     model = UserProfile
     template_name = "profile_detail.html"

@@ -43,3 +43,14 @@ body {
 .carousel_img {
     border-radius: 10px;
 }
+.card{
+    margin:auto;
+    width: 200px;
+    height: 100px;
+}
+
+.posts{
+    
+    top: 50%;
+    
+}
