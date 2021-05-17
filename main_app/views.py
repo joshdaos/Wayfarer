@@ -8,7 +8,7 @@ from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth.decorators import login_required
 from django.utils.decorators import method_decorator
 from django.views.generic import DetailView
-
+from django.views.generic.edit import UpdateView
 
 
 # Create your views here.
@@ -39,7 +39,12 @@ class PostDetail(DetailView):
     template_name = "post_detail.html"
     
 
-   
+@method_decorator(login_required, name='dispatch')
+class UserProfileUpdate(UpdateView):
+     model = UserProfile
+     fields = ['name','currentcity','join_date','image']
+     template_name = "profile_update.html"
+     success_url ="/profile/" 
 
 
 
