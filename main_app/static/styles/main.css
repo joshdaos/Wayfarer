@@ -5,11 +5,29 @@ body {
 }
 .navbar {
     background-color: orange;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 
-.navbar-end {
-    margin-left: 1340px;
+.navbar_logo {
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0 10px 0 10px;
 }
+
+.navbar_img {
+    height: auto;
+    width: auto;
+    max-height: 72px;
+    max-width: 72px;
+    border-radius: 50%;
+    margin: 0 10px 0 10px;
+}
+
 .topic_container {
     display: flex;
     justify-content: space-evenly;
@@ -27,8 +45,8 @@ body {
 }
 
 .item {
-    height: 250px;
-    width: 250px;
+    height: auto;
+    width: 100%;
     border-radius: 10px;
 }
 
