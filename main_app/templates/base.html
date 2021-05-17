@@ -8,9 +8,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     {% block head %} {% endblock %}
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
-
-    <!--Source: Font Awesome-->
-    <script src="{% static 'scripts/app.js' %}" defer></script>
+    <link rel="stylesheet" href="{% static 'styles/main.css' %}">
+    <link rel="stylesheet" href="{% static 'styles/owl.carousel.min.css' %}">
+    <link rel="stylesheet" href="{% static 'styles/owl.theme.default.min.css' %}">
+    <link rel="icon" href="data:,">
     <title>Wayfarer</title>
 </head>
 
@@ -36,23 +37,19 @@
             <a class="navbar-item" href="{% url 'signup' %}">Sign Up</a>
         </div>
         {% endif %}
-
         </div>
-
     </nav>
-
     <div class="container">
         {% block content %}
-
-        <!-- Other pages will add page specific content here -->
-        <!-- The page content will be dynamically created here -->
-        <!-- No need to actually add anything here -->
-
         <!-- Other pages will add page specific content here -->
         <!-- The page content will be dynamically created here -->
         <!-- No need to actually add anything here -->
         {% endblock %}
     </div>
+    {% block footer %} {% endblock %}
+    <script src="{% static 'scripts/jquery.js' %}" type="text/javascript" defer></script>
+    <script src="{% static 'scripts/owl.carousel.min.js' %}" type="text/javascript" defer></script>
+    <script src="{% static 'scripts/app.js' %}" type="text/javascript" defer></script>
 </body>
 
 </html>

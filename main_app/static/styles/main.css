@@ -2,16 +2,27 @@
 body {
     font-family: 'Comfortaa', cursive;
 }
-.webtitle {
-    margin-top: 9px;
-    margin-left: 40px;
-}
-.navbar-brand {
-    background-color: peru;
+
+.topic_container {
+    display: flex;
+    justify-content: space space-evenly;
+    align-content: space-between;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 100px;
+    margin: 0 125px 0 125px;
 }
 .navbar-end {
     margin-left: 1340px;
 }
-.wayfarer-logo{
-color: red;
+.topic_p {
+    color: #000000;
+    height: 50px;
+    width: 250px;
+    font-size: small;
+}
+
+.item {
+    height: 200px;
+    width: 400px;
 }
