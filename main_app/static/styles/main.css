@@ -1,8 +1,11 @@
-body {
-    background-color: #EFF8FF;
-    min-height: 100vh;
-}
 
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
+body {
+    font-family: 'Comfortaa', cursive;
+}
+.navbar {
+    background-color: orange;
+    }
 .topic_container {
     display: flex;
     justify-content: space space-evenly;
@@ -12,12 +15,8 @@ body {
     height: 100px;
     margin: 0 125px 0 125px;
 }
-
-.topic {
-    color: #000000;
-    flex-direction: column;
-    height: 50px;
-    font-size: x-large;
+.navbar-end {
+    margin-left: 1340px;
 }
 
 .topic_p {
