@@ -6,6 +6,9 @@ body {
 .navbar {
     background-color: orange;
     }
+.navbar-end {
+    margin-left: 1360px;
+    }
 .topic_container {
     display: flex;
     justify-content: space space-evenly;
@@ -14,9 +17,6 @@ body {
     flex-wrap: wrap;
     height: 100px;
     margin: 0 125px 0 125px;
-}
-.navbar-end {
-    margin-left: 1340px;
 }
 
 .topic_p {
@@ -32,8 +32,4 @@ body {
 }
 .navbar {
 background-color: orange;
-}
-
-.icons-credit {
-    margin-top: 550px;
 }
