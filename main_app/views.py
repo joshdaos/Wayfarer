@@ -7,6 +7,7 @@ from django.contrib.auth import login
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth.decorators import login_required
 from django.utils.decorators import method_decorator
+from django.views.generic import DetailView
 
 
 
@@ -30,6 +31,15 @@ class UserProfileList(TemplateView):
         # Here we are using the model to query the database for us.
         context["profile"] = UserProfile.objects.get(user=self.request.user)
         return context
+
+
+@method_decorator(login_required, name='dispatch')
+class PostDetail(DetailView):
+    model = Posts
+    template_name = "post_detail.html"
+    
+
+   
 
 
 
