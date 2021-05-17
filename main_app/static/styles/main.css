@@ -9,6 +9,8 @@ body {
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    height: 100px;
+    font-size: large;
 }
 
 .navbar_logo {
@@ -49,6 +51,9 @@ body {
 }
 .home-page-images {
     margin-top: 50px;
+    width: auto;
+    height: 350px;
+    margin-bottom: 80px;
 }
 .topic_p {
     color: #000000;
@@ -74,10 +79,6 @@ body {
     margin-top: 10px;
 }
 
-.item {
-    height: 200px;
-    width: 400px;
-}
 .navbar {
 background-color: orange;
 }
@@ -89,6 +90,8 @@ background-color: orange;
 
 #owl-slider .item #owl-pic {
     display: block;
-    width: 100%;
-    height: auto;
+    width: 90%;
+    height: 350px;
+    padding: 0 20px 0 100px;
 }
+
