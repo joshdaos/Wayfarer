@@ -93,14 +93,14 @@ body {
 
 .card {
     margin-top: 25px;
-    width: 200px;
+    width: 400px;
     height: 100px;
 }
 
 .posts {
-    padding: 20px;
+    padding: 30px;
     font-size: large;
-    margin: 10px 20px;
+    margin: 10px 30px;
 }
 
 .profile_title {
@@ -113,4 +113,8 @@ body {
     width: 90%;
     height: 350px;
     padding: 0 20px 0 100px;
+}
+
+.buttons {
+    padding-left: 90px;
 }
