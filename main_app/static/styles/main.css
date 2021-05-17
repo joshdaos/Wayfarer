@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
 body {
     font-family: 'Comfortaa', cursive;
@@ -29,19 +28,43 @@ body {
     margin: 0 10px 0 10px;
 }
 
+.navbar-end {
+    margin-left: 700px;
+    }
+
+.webtitle {
+        margin-top: 14px;
+        margin-left: 70px;
+    }
+
 .topic_container {
     display: flex;
     justify-content: space-evenly;
     align-content: space-between;
     flex-direction: row;
     height: 100px;
-    /* margin: 0 125px 0 125px; */
+    margin: 0 125px 0 125px;
+    margin-top: -10px;
 }
+.wayfarer-intro {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.topic {    
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    margin-left: -210px;
+}
+.home-page-images {
+    display: flex;
+    margin-top: 50px;
+    }
 .topic_p {
     color: #000000;
     width: 250px;
     font-size: small;
-
     margin-top: 20px;
 }
 
@@ -63,17 +86,16 @@ body {
 
 .posts {
     padding: 20px;
-    
- 
-}
+    margin-top: 10px;
+    font-size: large;
+    }
 
-.field{
-    top: 50%;
-    left:50%;
+.item {
+    height: 200px;
+    width: 400px;
 }
 .navbar {
 background-color: orange;
-
 }
 
 .profile_title {

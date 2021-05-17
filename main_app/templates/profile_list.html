@@ -1,25 +1,9 @@
 {% extends 'base.html' %}
 {% block content %}
-<h1 class="title">Profile Page</h1>
-<div class="posts">
-    <h3>Posts</h3>
-    {% if Posts %}
-    Title: {{posts.title}}
-    {% endif %}
-    {% for post in profile.posts.all %}
-    <div>
-        <ul>
-            <li>{{forloop.counter}}</li>
-            <li><b>{{post.title}}</b></li>
-        </ul>
-        <!-- <a class="button is-dark" href="{% url 'profile_detail' %}">See Post!</a> -->
-    </div>
-    {% empty %}
-    <h3>No Posts Available Yet</h3>
-    {% endfor %}
-</div>
-<div class="gallery">
-    {% for profile in profiles %}
+<h1 class="profile_title">Profile Page</h1>
+<div class="profile_container">
+    <div class="gallery">
+        {% for profile in profiles %}
         <a href="">
             <div class="card">
                 <div class="card-image">
@@ -40,18 +24,18 @@
     </div>
     <div class="posts">
         <h3>Posts</h3>
-    {% for post in profile.posts.all %}
+        {% for post in profile.posts.all %}
         <div>
             <ul>
                 <li>{{forloop.counter}}</li>
                 <li><b>{{post.name}}</b></li>
                 <li><b>{{post.title}}</b></li>
             </ul>
-        <!-- <a class="button is-dark" href="{% url 'profile_detail' %}">See Post!</a> -->
+            <!-- <a class="button is-dark" href="{% url 'profile_detail' %}">See Post!</a> -->
         </div>
-    {% empty %}
+        {% empty %}
         <h3>No Posts Available Yet</h3>
-    {% endfor %}
+        {% endfor %}
     </div>
 </div>
 {% endblock %}

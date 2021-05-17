@@ -31,6 +31,8 @@ class UserProfileList(TemplateView):
         context["profiles"] = UserProfile.objects.all()
         return context
 
+
+
 class PostsList(TemplateView):
     template_name = "profile_list.html"
     def get_context_data(self, **kwargs):
