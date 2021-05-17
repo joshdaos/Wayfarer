@@ -2,17 +2,13 @@ from django.shortcuts import render, redirect
 from django.views import View
 from django.http import HttpResponse
 from django.views.generic.base import TemplateView
+from .models import UserProfile, Posts
 from django.contrib.auth import login
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth.decorators import login_required
 from django.utils.decorators import method_decorator
+from django.views.generic import DetailView
 
-
-from .models import UserProfile
-from django.contrib.auth import login
-from django.contrib.auth.forms import UserCreationForm
-from django.contrib.auth.decorators import login_required
-from django.utils.decorators import method_decorator
 
 # Create your views here.
 
@@ -40,6 +36,8 @@ class UserProfileList(TemplateView):
             context["profiles"] = UserProfile.objects.filter(user=self.request.user)
             context["header"] = "Profile Page"
         return context
+
+
 
 
 
