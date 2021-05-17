@@ -127,7 +127,7 @@ body {
 
 .post_content {
     font-size: larger;
-    margin: 20px 0 0 50px;
+    margin: 20px 0 0 0;
     max-width: 350px;
 }
 
@@ -144,6 +144,10 @@ body {
     font-weight: bold;
     margin: 20px 0 0 0;
     /* text-color: ; */
+}
+
+.post_user {
+    font-weight: bold;
 }
 
 .buttons {
