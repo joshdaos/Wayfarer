@@ -3,8 +3,16 @@
 body {
     font-family: 'Comfortaa', cursive;
 }
+
 .navbar {
     background-color: orange;
+    }
+.navbar-end {
+    margin-left: 700px;
+    }
+.webtitle {
+        margin-top: 14px;
+        margin-left: 70px;
     }
 .topic_container {
     display: flex;
@@ -14,36 +22,35 @@ body {
     flex-wrap: wrap;
     height: 100px;
     margin: 0 125px 0 125px;
+    margin-top: -10px;
 }
-.navbar-end {
-    margin-left: 1340px;
+.wayfarer-intro {
+    display: flex;
+    justify-content: center;
+    align-content: center;
 }
-
+.topic {    
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    margin-left: -210px;
+}
+.home-page-images {
+    display: flex;
+    margin-top: 50px;
+}
 .topic_p {
     color: #000000;
     height: 50px;
     width: 250px;
     font-size: small;
+    margin-top: 10px;
 }
 
-.carousel_item {
-    height: 250px;
-    width: 250px;
+.item {
+    height: 200px;
+    width: 400px;
 }
-
-.carousel_img {
-    border-radius: 10px;
-}
-.card{
-    
-    margin-top: auto;
-    width: 200px;
-    height: 100px;
-}
-
-.posts{
-    padding: 20px;
-    
- 
-    
+.navbar {
+background-color: orange;
 }

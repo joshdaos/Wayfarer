@@ -20,14 +20,18 @@
     <nav class="navbar" role="navigation" aria-label="main navigation">
         <h1 class="webtitle">Wayfarer</h1>
         <!--Navbar-->
+        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
 
-        <div class="navbar-brand">
-            {% if user.is_authenticated %}<span class="navbar-item">Welcome: {{user.username}}</span>
-            <a class="navbar-item" href="/">Home</a>
-            <a class="navbar-item" href="/profile">Profile</a>
-            <a class="navbar-item" href="{% url 'logout' %}">Logout</a>
-        </div>
-
+            <div class="navbar-brand">
+                {% if user.is_authenticated %}<span class="navbar-item">Welcome: {{user.username}}</span>
+                <a class="navbar-item" href="/">Home</a>
+                <a class="navbar-item" href="/profile">Profile</a>
+                <a class="navbar-item" href="{% url 'logout' %}">Logout</a>
+            </div>
+        </a>
         {% else %}
         <div class="navbar-menu navbar-end">
             <a class="navbar-item" href="{% url 'login' %}">Log In</a>
