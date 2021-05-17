@@ -16,13 +16,9 @@
 </head>
 
 <body>
-    <nav class="navbar is-black" role="navigation" aria-label="main navigation">
-        <span class="wayfarer-logo">
-            <i class="fad fa-umbrella-beach"></i>
-        </span>
+
+    <nav class="navbar" role="navigation" aria-label="main navigation">
         <h1 class="webtitle">Wayfarer</h1>
-
-
         <!--Navbar-->
 
         <div class="navbar-brand">
@@ -31,6 +27,7 @@
             <a class="navbar-item" href="/profile">Profile</a>
             <a class="navbar-item" href="{% url 'logout' %}">Logout</a>
         </div>
+
         {% else %}
         <div class="navbar-menu navbar-end">
             <a class="navbar-item" href="{% url 'login' %}">Log In</a>
@@ -50,6 +47,8 @@
     <script src="{% static 'scripts/jquery.js' %}" type="text/javascript" defer></script>
     <script src="{% static 'scripts/owl.carousel.min.js' %}" type="text/javascript" defer></script>
     <script src="{% static 'scripts/app.js' %}" type="text/javascript" defer></script>
+    <div class="icons-credit">Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a
+            href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
 </body>
 
 </html>
