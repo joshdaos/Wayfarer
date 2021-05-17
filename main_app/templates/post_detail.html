@@ -1,11 +1,13 @@
 {% extends 'base.html' %}
 {% block content %}
 <div class="post_container">
-    <img class="post_image" src="{{posts.image}}" alt="{{posts.userprofile}}" />
+    <div class="post_info">
         <div class="content_container">
             <h1 class="post_title">{{posts.title}}</h1>
-                        <h3 class="post_user">{{posts.userprofile}}</h3>
-                        <p class="post_content">{{posts.content}}</p>
+                <img class="post_image" src="{{posts.image}}" alt="{{posts.userprofile}}" />
+                    <h3 class="post_user">{{posts.userprofile}}</h3>
         </div>
+    </div>
+    <p class="post_content">{{posts.content}}</p>
 </div>
 {% endblock %}
