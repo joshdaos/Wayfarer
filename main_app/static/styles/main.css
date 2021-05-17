@@ -3,14 +3,16 @@
 body {
     font-family: 'Comfortaa', cursive;
 }
-.webtitle {
-    margin-top: 
-}
+
 .navbar {
     background-color: orange;
     }
 .navbar-end {
-    margin-left: 1360px;
+    margin-left: 700px;
+    }
+.webtitle {
+        margin-top: 12px;
+        margin-left: 70px;
     }
 .topic_container {
     display: flex;
@@ -21,7 +23,9 @@ body {
     height: 100px;
     margin: 0 125px 0 125px;
 }
-
+.home-page-images {
+    margin-top: 50px;
+}
 .topic_p {
     color: #000000;
     height: 50px;
