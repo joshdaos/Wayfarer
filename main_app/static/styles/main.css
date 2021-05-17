@@ -88,7 +88,7 @@ body {
 
 .card {
     margin-top: 25px;
-    width: 200px;
+    width: 400px;
     height: 100px;
 }
 
@@ -112,9 +112,9 @@ body {
 
 .post_container {
     display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-content: left;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
     font-family: 'Nunito', sans-serif;
 }
 
@@ -127,9 +127,8 @@ body {
 
 .post_content {
     font-size: larger;
-    align-items: flex-end;
     margin: 20px 0 0 50px;
-    max-width: 200px;
+    max-width: 350px;
 }
 
 .post_image {
@@ -144,5 +143,6 @@ body {
     font-size: xx-large;
     font-weight: bold;
     margin: 20px 0 0 0;
+    /* text-color: ; */
 }
 
