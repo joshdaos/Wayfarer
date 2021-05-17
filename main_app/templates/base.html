@@ -8,17 +8,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     {% block head %} {% endblock %}
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
-    <link rel="stylesheet" href="{% static 'styles/main.css' %}">
-    <!--  -->
+
+    <!--Source: Font Awesome-->
     <script src="{% static 'scripts/app.js' %}" defer></script>
     <title>Wayfarer</title>
 </head>
 
 <body>
     <nav class="navbar is-black" role="navigation" aria-label="main navigation">
+        <span class="wayfarer-logo">
+            <i class="fad fa-umbrella-beach"></i>
+        </span>
         <h1 class="webtitle">Wayfarer</h1>
 
+
         <!--Navbar-->
+
         <div class="navbar-brand">
             {% if user.is_authenticated %}<span class="navbar-item">Welcome: {{user.username}}</span>
             <a class="navbar-item" href="/">Home</a>

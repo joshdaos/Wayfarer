@@ -1,24 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
+body {
+    font-family: 'Comfortaa', cursive;
+}
 .webtitle {
-    margin-top: 13px;
+    margin-top: 9px;
     margin-left: 40px;
 }
-
-.navbar-end {
-    margin-left: 1350px;
-}
-.wayfarer-logo {
-    background-size: contains;
-    height: 300px;
-}
-
-/*.navbar-item {
-    margin-right: 1290px;
-}
 .navbar-brand {
-    background-color: orange;
+    background-color: peru;
 }
-
-.webtitle{
-    margin-top: 14px;
+.navbar-end {
+    margin-left: 1340px;
 }
-*/
+.wayfarer-logo{
+color: red;
+}
