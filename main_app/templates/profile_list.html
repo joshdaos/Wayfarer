@@ -3,11 +3,13 @@
 <h1 class="title">Profile Page</h1>
 <div class="posts">
     <h3>Posts</h3>
+    {% if Posts %}
+    Title: {{posts.title}}
+    {% endif %}
     {% for post in profile.posts.all %}
     <div>
         <ul>
             <li>{{forloop.counter}}</li>
-            <li><b>{{post.name}}</b></li>
             <li><b>{{post.title}}</b></li>
         </ul>
         <!-- <a class="button is-dark" href="{% url 'profile_detail' %}">See Post!</a> -->

@@ -1,0 +1,12 @@
+{% for post in profile.posts.all %}
+<div>
+    <ul>
+        <li>{{forloop.counter}}</li>
+        <li><b>{{post.title}}</b></li>
+        <li><b>{{post.content}}</b></li>
+    </ul>
+    <!-- <a class="button is-dark" href="{% url 'profile_detail' %}">See Post!</a> -->
+</div>
+{% empty %}
+<h3>No Posts Available Yet</h3>
+{% endfor %}

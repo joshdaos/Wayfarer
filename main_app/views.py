@@ -7,7 +7,7 @@ from django.contrib.auth import login
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth.decorators import login_required
 from django.utils.decorators import method_decorator
-from django.views.generic import DetailView
+
 
 
 # Create your views here.
@@ -27,16 +27,18 @@ class UserProfileList(TemplateView):
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        name = self.request.GET.get("name")
-        if name != None:
-            context["profiles"] = UserProfile.objects.filter(
-                name__icontains=name, user=self.request.user)
-            context["header"] = f"Searching for {name}"
-        else:
-            context["profiles"] = UserProfile.objects.filter(user=self.request.user)
-            context["header"] = "Profile Page"
+        # Here we are using the model to query the database for us.
+        context["profiles"] = UserProfile.objects.all()
         return context
 
+class PostsList(TemplateView):
+    template_name = "profile_list.html"
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context["posts"] = Posts.objects.all() # Here we are using the model to query the database for us.
+        return context
+
+      
 
 
 
