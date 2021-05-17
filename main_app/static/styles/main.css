@@ -24,17 +24,9 @@ body {
     width: auto;
     max-height: 72px;
     max-width: 72px;
-    border-radius: 50%;
+    border-radius: 60%;
     margin: 0 10px 0 10px;
 }
-
-.navbar-end {
-    margin-left: 700px;
-    }
-.webtitle {
-        margin-top: 14px;
-        margin-left: 70px;
-    }
 
 .topic_container {
     display: flex;
@@ -42,9 +34,6 @@ body {
     align-content: space-between;
     flex-direction: row;
     height: 100px;
-    /* margin: 0 125px 0 125px; */
-    margin: 0 125px 0 125px;
-    margin-top: -10px;
 }
 .wayfarer-intro {
     display: flex;
@@ -58,7 +47,6 @@ body {
     margin-left: -210px;
 }
 .home-page-images {
-    display: flex;
     margin-top: 50px;
 }
 .topic_p {
@@ -66,12 +54,6 @@ body {
     width: 250px;
     font-size: small;
     margin-top: 20px;
-}
-
-.item {
-    height: auto;
-    width: 100%;
-    border-radius: 10px;
 }
 
 .profile_container {
@@ -102,4 +84,10 @@ background-color: orange;
 .profile_title {
     font-size: xx-large;
     margin-top: 10px;
+}
+
+#owl-slider .item #owl-pic {
+    display: block;
+    width: 100%;
+    height: auto;
 }
