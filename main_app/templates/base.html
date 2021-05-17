@@ -16,7 +16,6 @@
 </head>
 
 <body>
-
     <nav class="navbar" role="navigation" aria-label="main navigation">
         <div class="navbar_logo">
             <img class="navbar_img" src="{% static 'images/beach-ball-logo-2.jpg' %}" alt="Wayfarer Beach Ball Logo">
@@ -24,12 +23,6 @@
         </div>
         <!--Navbar-->
         <div class="navbar_links">
-            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-            </a>
-
             <div class="navbar-brand">
                 {% if user.is_authenticated %}<p class="navbar-item">Welcome: {{user.username}}</p>
                 <a class="navbar-item" href="/">Home</a>
@@ -56,7 +49,6 @@
     <script src="{% static 'scripts/jquery.js' %}" type="text/javascript" defer></script>
     <script src="{% static 'scripts/owl.carousel.min.js' %}" type="text/javascript" defer></script>
     <script src="{% static 'scripts/app.js' %}" type="text/javascript" defer></script>
-
 </body>
 
 </html>
