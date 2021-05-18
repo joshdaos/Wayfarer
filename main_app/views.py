@@ -62,10 +62,19 @@ class Signup(View):
         return render(request, "registration/signup.html", context)
 
     def post(self, request):
+        
         form = UserCreationForm(request.POST)
+
+        name = request.POST.get("name")
+        currentcity = request.POST.get("currentcity")
+        image = request.POST.get("image")
+    
         if form.is_valid():
+            
             user = form.save()
+            UserProfile.objects.create(name=name, currentcity=currentcity, image=image, user=user)
             login(request, user)
-            return redirect("profile_list")
+            return redirect("profile_detail")
         else:
-            return redirect("signup")
+            context = {"form": form}
+            return render(request, "registration/signup.html", context)

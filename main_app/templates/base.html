@@ -32,8 +32,8 @@
             </div>
         {% else %}
             <div class="navbar-menu navbar-end">
-                <a class="navbar-item" id="login">Log In</a>
-                <a class="navbar-item" id="signup">Sign Up</a>
+                <a class="navbar-item" id="login">Log In/Sign Up</a>
+                <!-- <a class="navbar-item" id="signup">Sign Up</a> -->
             </div>
             {% endif %}
         </div>
@@ -51,6 +51,9 @@
                 </form>
                 <form method="post" action="{% url 'signup' %}">
                     {% csrf_token %} {{ form.as_p }}
+                    <input type="text" placeholder="Name" name="name" required>
+                    <input type="text" placeholder="Current City" name="currentcity" required>
+                    <input type="text" placeholder="Image" name="image" required>
                     <input type="submit" class="btn" value="Sign Up" />
                     <input type="hidden" name="next" value="{{ next }}" />
                 </form>
