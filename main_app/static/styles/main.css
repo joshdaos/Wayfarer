@@ -210,5 +210,7 @@ a.button.is-info {
     margin-bottom: 20px;
     margin-left: -20px;
 }
-
+ .topic_container {
+    background-color: white;
+ }
 
