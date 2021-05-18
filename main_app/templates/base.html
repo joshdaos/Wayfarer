@@ -32,8 +32,8 @@
             </div>
             {% else %}
             <div class="navbar-menu navbar-end">
-                <a class="navbar-item" id="login">Log In</a>
-                <a class="navbar-item" id="signup">Sign Up</a>
+                <a class="navbar-item" id="login">Log In/Sign Up</a>
+                <!-- <a class="navbar-item" id="signup">Sign Up</a> -->
             </div>
             {% endif %}
         </div>
@@ -43,14 +43,24 @@
             <div class="modal-background"></div>
             <div class="modal-content">
                 <form method="post" action="{% url 'login' %}">
+<<<<<<< HEAD
                     <h1 class="login-header">Log In</h1>
                     {% csrf_token %} {{ form.as_p }}
                     <input type="submit" class="btn" value="Login" />
+=======
+                    {% csrf_token %} 
+                    <input type="text" name="username">
+                    <input type="password" name="password">
+                    <input type="submit" class="btn" value="login" />
+>>>>>>> josh
                     <input type="hidden" name="next" value="{{ next }}" />
                 </form>
                 <form method="post" action="{% url 'signup' %}">
                     <h1 class="signup-header">Sign Up</h1>
                     {% csrf_token %} {{ form.as_p }}
+                    <input type="text" placeholder="Name" name="name" required>
+                    <input type="text" placeholder="Current City" name="currentcity" required>
+                    <input type="text" placeholder="Image" name="image" required>
                     <input type="submit" class="btn" value="Sign Up" />
                     <input type="hidden" name="next" value="{{ next }}" />
                 </form>
