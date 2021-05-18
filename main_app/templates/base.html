@@ -30,26 +30,33 @@
                 <a class="navbar-item" href="/profile">Profile</a>
                 <a class="navbar-item" href="{% url 'logout' %}">Logout</a>
             </div>
-        {% else %}
+            {% else %}
             <div class="navbar-menu navbar-end">
                 <a class="navbar-item" id="login">Log In/Sign Up</a>
                 <!-- <a class="navbar-item" id="signup">Sign Up</a> -->
             </div>
             {% endif %}
         </div>
-    </div>
-    <!-- adding Modal -->
-    <div class="modal">
-        <div class="modal-background"></div>
+        </div>
+        <!-- adding Modal -->
+        <div class="modal">
+            <div class="modal-background"></div>
             <div class="modal-content">
                 <form method="post" action="{% url 'login' %}">
+<<<<<<< HEAD
                     {% csrf_token %} 
                     <input type="text" name="username">
                     <input type="password" name="password">
                     <input type="submit" class="btn" value="login" />
+=======
+                    <h1 class="login-header">Log In</h1>
+                    {% csrf_token %} {{ form.as_p }}
+                    <input type="submit" class="btn" value="Login" />
+>>>>>>> kimo
                     <input type="hidden" name="next" value="{{ next }}" />
                 </form>
                 <form method="post" action="{% url 'signup' %}">
+                    <h1 class="signup-header">Sign Up</h1>
                     {% csrf_token %} {{ form.as_p }}
                     <input type="text" placeholder="Name" name="name" required>
                     <input type="text" placeholder="Current City" name="currentcity" required>
