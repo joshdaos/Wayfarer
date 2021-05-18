@@ -2,12 +2,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Mali:wght@200&family=Nunito:wght@200&family=Ubuntu:wght@300&display=swap');
 body {
     font-family: 'Nunito', sans-serif;
-    height: 1000px;
-    background-color: yellow;
+    background-color: #eec89f;
 }
 
 .navbar {
-    background-color: orange;
+    background-color: #ff9067;
     height: 75px;
     font-size: large;
     display: flex;
@@ -37,7 +36,9 @@ body {
 .webtitle {
     font-weight: bold;
     font-family: 'Ubuntu', sans;
+    color: white;
 }
+
 
 .navbar_img {
     height: auto;
@@ -190,4 +191,12 @@ a.button.is-info {
 
 .modal-close {
     background-color: black;
+}
+
+.navbar-item {
+    color: white;
+}
+
+.topic_container {
+    background: white;
 }
