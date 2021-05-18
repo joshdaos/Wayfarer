@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Mali:wght@200&family=Nunito:wght@200&family=Ubuntu:wght@300&display=swap');
 body {
     font-family: 'Nunito', sans-serif;
+    height: 1000px;
     background-color: #eec89f;
 }
 
@@ -36,7 +37,6 @@ body {
 .webtitle {
     font-weight: bold;
     font-family: 'Ubuntu', sans;
-    color: white;
 }
 
 
