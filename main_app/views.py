@@ -48,12 +48,6 @@ class UserProfileUpdate(UpdateView):
 
 
 
-
-      
-
-
-
-
 class Signup(View):
 
     def get(self, request):
