@@ -59,6 +59,8 @@ body {
     align-content: center;
     font-size: x-large;
     margin-bottom: 20px;
+    color: #860f44;
+    font-weight: bold;
 }
 
 .topic {    
@@ -66,6 +68,8 @@ body {
     justify-content: center;
     margin-top: 15px;
     margin-left: -210px;
+    color: #ea5f2d;
+    font-weight: bold;
 }
 
 .home-page-images {
@@ -80,6 +84,8 @@ body {
     width: 250px;
     font-size: small;
     margin-top: 20px;
+    color: #860f44;
+    font-weight: bold;
 }
 
 .profile_container {
@@ -101,6 +107,8 @@ body {
 .profile_title {
     font-size: xx-large;
     margin-top: 10px;
+    color: #860f44;
+    font-weight: bold;
 }
 
 #owl-slider .item #owl-pic {
