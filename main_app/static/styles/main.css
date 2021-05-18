@@ -176,15 +176,6 @@ a.button.is-info {
     background-color: black;
 }
 
-<<<<<<< HEAD
-.navbar-item {
-    color: white;
-}
-
-.topic_container {
-    background: white;
-}
-=======
 .login-header {
     display: flex;
     align-content: left;
@@ -203,6 +194,10 @@ a.button.is-info {
     margin-bottom: 20px;
     margin-left: -20px;
 }
+ .topic_container {
+    background-color: white;
+ }
 
-
->>>>>>> kimo
+ .navbar-item {
+     color: white;
+ }
