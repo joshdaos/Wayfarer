@@ -10,6 +10,7 @@ body {
     font-size: large;
     display: flex;
     font-weight: bold;
+    font-family: 'Ubuntu', sans
 }
 
 .navbar_links {
