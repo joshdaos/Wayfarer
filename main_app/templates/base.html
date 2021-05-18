@@ -45,18 +45,18 @@
                 <form method="post" action="{% url 'login' %}">
                     <h1 class="login-header">Log In</h1>
                     {% csrf_token %} 
-                    <input type="text" name="username">
-                    <input type="password" name="password">
+                    <input type="text" placeholder="User Name" name="username"> <br>
+                    <input type="password" placeholder="Password" name="password"> <br>
                     <input type="submit" class="btn" value="login" />
                     <input type="hidden" name="next" value="{{ next }}" />
                 </form>
                 <form method="post" action="{% url 'signup' %}">
                     <h1 class="signup-header">Sign Up</h1>
                     {% csrf_token %} {{ form.as_p }}
-                    <input type="text" placeholder="Name" name="name" required>
-                    <input type="text" placeholder="Current City" name="currentcity" required>
-                    <input type="text" placeholder="Image" name="image" required>
-                    <input type="submit" class="btn" value="Sign Up" />
+                    <input type="text" placeholder="Name" name="name" required> <br>
+                    <input type="text" placeholder="Current City" name="currentcity" required> <br>
+                    <input type="text" placeholder="Image" name="image" required> <br>
+                    <input type="submit" class="btn" value="Sign Up" /><br>
                     <input type="hidden" name="next" value="{{ next }}" />
                 </form>
             </div>
@@ -65,9 +65,7 @@
     </nav>
     <div class="container">
         {% block content %}
-        <!-- Other pages will add page specific content here -->
-        <!-- The page content will be dynamically created here -->
-        <!-- No need to actually add anything here -->
+       
         {% endblock %}
     </div>
     {% block footer %} {% endblock %}
