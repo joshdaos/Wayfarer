@@ -144,7 +144,6 @@ body {
     font-size: xx-large;
     font-weight: bold;
     margin: 20px 0 0 0;
-    /* text-color: ; */
 }
 
 .buttons {
@@ -161,7 +160,7 @@ a.button.is-info {
 
 .modal-content {
     background-color: #eec89f;
-    padding:30px;
+    padding: 30px;
     border: 5px solid orange;
 }
 
@@ -170,9 +169,27 @@ a.button.is-info {
     padding: 200px;
 }
 
-
-
 .modal-close {
     background-color: black;
 }
+
+.login-header {
+    display: flex;
+    align-content: left;
+    margin-bottom: 20px;
+    font-size: x-large;
+    font-weight: bold;
+    margin-left: -20px;
+}
+
+.signup-header {
+    display: flex;
+    align-content: left;
+    margin-top: 15px;
+    font-size: x-large;
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-left: -20px;
+}
+
 
