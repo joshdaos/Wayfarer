@@ -30,13 +30,37 @@
                 <a class="navbar-item" href="/profile">Profile</a>
                 <a class="navbar-item" href="{% url 'logout' %}">Logout</a>
             </div>
-        {% else %}
+            {% else %}
             <div class="navbar-menu navbar-end">
-                <a class="navbar-item" href="{% url 'login' %}">Log In</a>
-                <a class="navbar-item" href="{% url 'signup' %}">Sign Up</a>
+                <a class="navbar-item" id="login">Log In/Sign Up</a>
+                <!-- <a class="navbar-item" id="signup">Sign Up</a> -->
             </div>
-        {% endif %}
+            {% endif %}
+        </div>
+        </div>
+        <!-- adding Modal -->
+        <div class="modal">
+            <div class="modal-background"></div>
+            <div class="modal-content">
+                <form method="post" action="{% url 'login' %}">
+                    <h1 class="login-header">Log In</h1>
+                    {% csrf_token %} 
+                    <input type="text" name="username">
+                    <input type="password" name="password">
+                    <input type="submit" class="btn" value="login" />
+                    <input type="hidden" name="next" value="{{ next }}" />
+                </form>
+                <form method="post" action="{% url 'signup' %}">
+                    <h1 class="signup-header">Sign Up</h1>
+                    {% csrf_token %} {{ form.as_p }}
+                    <input type="text" placeholder="Name" name="name" required>
+                    <input type="text" placeholder="Current City" name="currentcity" required>
+                    <input type="text" placeholder="Image" name="image" required>
+                    <input type="submit" class="btn" value="Sign Up" />
+                    <input type="hidden" name="next" value="{{ next }}" />
+                </form>
             </div>
+            <button class="modal-close is-large" id="close" aria-label="close"></button>
         </div>
     </nav>
     <div class="container">
@@ -50,6 +74,7 @@
     <script src="{% static 'scripts/jquery.js' %}" type="text/javascript" defer></script>
     <script src="{% static 'scripts/owl.carousel.min.js' %}" type="text/javascript" defer></script>
     <script src="{% static 'scripts/app.js' %}" type="text/javascript" defer></script>
+
 </body>
 
 </html>

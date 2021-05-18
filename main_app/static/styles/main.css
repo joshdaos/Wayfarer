@@ -2,10 +2,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Mali:wght@200&family=Nunito:wght@200&family=Ubuntu:wght@300&display=swap');
 body {
     font-family: 'Nunito', sans-serif;
+    background-color: #eec89f;
 }
 
 .navbar {
-    background-color: orange;
+    background-color: #ff9067;
     height: 75px;
     font-size: large;
     display: flex;
@@ -33,8 +34,10 @@ body {
 
 .webtitle {
     font-weight: bold;
-    font-family: 'Ubuntu', sans
+    font-family: 'Ubuntu', sans;
+    color: white;
 }
+
 
 .navbar_img {
     height: auto;
@@ -110,6 +113,7 @@ body {
     padding: 0 20px 0 100px;
 }
 
+
 .post_container {
     display: flex;
     flex-direction: column;
@@ -143,7 +147,6 @@ body {
     font-size: xx-large;
     font-weight: bold;
     margin: 20px 0 0 0;
-    /* text-color: ; */
 }
 
 .buttons {
@@ -158,4 +161,43 @@ a.button.is-info {
     background-color: orange;
 }
 
+.modal-content {
+    background-color: #eec89f;
+    padding: 30px;
+    border: 5px solid orange;
+}
 
+.modal-background {
+    background-color: transparent;
+    padding: 200px;
+}
+
+.modal-close {
+    background-color: black;
+}
+
+.login-header {
+    display: flex;
+    align-content: left;
+    margin-bottom: 20px;
+    font-size: x-large;
+    font-weight: bold;
+    margin-left: -20px;
+}
+
+.signup-header {
+    display: flex;
+    align-content: left;
+    margin-top: 15px;
+    font-size: x-large;
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-left: -20px;
+}
+ .topic_container {
+    background-color: white;
+ }
+
+ .navbar-item {
+     color: white;
+ }
