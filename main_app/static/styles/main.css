@@ -158,4 +158,7 @@ a.button.is-info {
     background-color: orange;
 }
 
+.modal-content {
+    background-color: white;
+}
 

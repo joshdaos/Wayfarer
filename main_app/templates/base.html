@@ -33,7 +33,7 @@
         {% else %}
             <div class="navbar-menu navbar-end">
                 <a class="navbar-item" id="login">Log In</a>
-                <a class="navbar-item" href="{% url 'signup' %}">Sign Up</a>
+                <a class="navbar-item" id="signup">Sign Up</a>
             </div>
             {% endif %}
         </div>
@@ -45,6 +45,11 @@
                 <form method="post" action="{% url 'login' %}">
                     {% csrf_token %} {{ form.as_p }}
                     <input type="submit" class="btn" value="login" />
+                    <input type="hidden" name="next" value="{{ next }}" />
+                </form>
+                <form method="post" action="{% url 'signup' %}">
+                    {% csrf_token %} {{ form.as_p }}
+                    <input type="submit" class="btn" value="Sign Up" />
                     <input type="hidden" name="next" value="{{ next }}" />
                 </form>
             </div>

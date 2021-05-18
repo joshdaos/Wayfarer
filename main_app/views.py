@@ -19,8 +19,14 @@ class Home(View):
         return HttpResponse("Wayfarer Home")
 
 
-class Home(TemplateView):
-    template_name = "home.html"
+class Home(View):
+   
+    def get(self, request):
+        form = UserCreationForm()
+        context = {"form": form}
+        return render(request, "home.html", context)
+
+
 
 @method_decorator(login_required, name='dispatch')
 class UserProfileList(TemplateView):
