@@ -159,6 +159,16 @@ a.button.is-info {
 }
 
 .modal-content {
-    background-color: white;
+    background-color: #eec89f;
+    padding:30px;
+    border: 5px solid orange;
 }
 
+.modal-background {
+    background-color: transparent;
+    padding: 200px;
+}
+
+.modal-close {
+    background-color: black;
+}
