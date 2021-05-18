@@ -162,4 +162,17 @@ a.button.is-info {
     background-color: orange;
 }
 
+.modal-content {
+    background-color: #eec89f;
+    padding:30px;
+    border: 5px solid orange;
+}
 
+.modal-background {
+    background-color: transparent;
+    padding: 200px;
+}
+
+.modal-close {
+    background-color: black;
+}
