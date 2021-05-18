@@ -201,3 +201,7 @@ a.button.is-info {
  .navbar-item {
      color: white;
  }
+ .login-text-boxes {
+     display: flex;
+     align-content: flex-end;
+ }
