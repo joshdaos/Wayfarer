@@ -189,8 +189,8 @@ a.button.is-info {
 }
 
 .topic_container {
-    background: white;
-    display: relative;
+    background: #ffffff;
+    
 }
 .login-header {
     display: flex;
