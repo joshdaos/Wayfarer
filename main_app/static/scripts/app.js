@@ -25,3 +25,12 @@ $(document).ready(function(){
       loop:true,
     });
   });
+
+$("#login").on("click", function(){
+    console.log("hello modal")
+    $(".modal").addClass("is-active")
+    $("#close").on("click", function(){
+    console.log("bye modal")
+    $(".modal").removeClass("is-active")
+  })
+})
