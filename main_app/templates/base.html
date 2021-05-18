@@ -32,11 +32,28 @@
             </div>
         {% else %}
             <div class="navbar-menu navbar-end">
-                <a class="navbar-item" href="{% url 'login' %}">Log In</a>
-                <a class="navbar-item" href="{% url 'signup' %}">Sign Up</a>
+                <a class="navbar-item" id="login">Log In</a>
+                <a class="navbar-item" id="signup">Sign Up</a>
             </div>
-        {% endif %}
+            {% endif %}
+        </div>
+    </div>
+    <!-- adding Modal -->
+    <div class="modal">
+        <div class="modal-background"></div>
+            <div class="modal-content">
+                <form method="post" action="{% url 'login' %}">
+                    {% csrf_token %} {{ form.as_p }}
+                    <input type="submit" class="btn" value="login" />
+                    <input type="hidden" name="next" value="{{ next }}" />
+                </form>
+                <form method="post" action="{% url 'signup' %}">
+                    {% csrf_token %} {{ form.as_p }}
+                    <input type="submit" class="btn" value="Sign Up" />
+                    <input type="hidden" name="next" value="{{ next }}" />
+                </form>
             </div>
+            <button class="modal-close is-large" id="close" aria-label="close"></button>
         </div>
     </nav>
     <div class="container">
@@ -50,6 +67,7 @@
     <script src="{% static 'scripts/jquery.js' %}" type="text/javascript" defer></script>
     <script src="{% static 'scripts/owl.carousel.min.js' %}" type="text/javascript" defer></script>
     <script src="{% static 'scripts/app.js' %}" type="text/javascript" defer></script>
+
 </body>
 
 </html>
