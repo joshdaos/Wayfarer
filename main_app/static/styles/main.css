@@ -184,15 +184,14 @@ a.button.is-info {
     background-color: black;
 }
 
-<<<<<<< HEAD
 .navbar-item {
     color: white;
 }
 
 .topic_container {
     background: white;
+    display: relative;
 }
-=======
 .login-header {
     display: flex;
     align-content: left;
@@ -213,4 +212,3 @@ a.button.is-info {
 }
 
 
->>>>>>> kimo
