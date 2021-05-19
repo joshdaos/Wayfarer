@@ -39,7 +39,6 @@ body {
     font-family: 'Ubuntu', sans;
 }
 
-
 .navbar_img {
     height: auto;
     width: auto;
@@ -69,7 +68,6 @@ body {
     margin: 30px;
     color: #860f44;
     font-weight: bold;
-
 }
 
 .topic {    
@@ -79,8 +77,11 @@ body {
     margin-left: -210px;
     color: #ff9067;
     font-size: large;
-    font-weight: bold;
-    
+    font-weight: bold;  
+}
+
+#login.navbar-item:hover{
+    color:darkred;
 }
 
 .home-page-images {
@@ -149,17 +150,20 @@ body {
     color: #860f44;
 }
 
-.post_content {
+.content-container {
     font-size: larger;
     margin: 20px 0 0 0;
     max-width: 400px;
     color: #860f44;
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
 }
 
 .post_image {
     max-width: 500px;
     max-height: 500px;
-    border-radius: 10px;
+    border-radius: 20px;
     margin: 20px 0;
 }
 
@@ -167,6 +171,12 @@ body {
     font-size: xx-large;
     font-weight: bold;
     margin: 20px 0 0 0;
+}
+
+.post_user {
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #ff9067;
 }
 
 .buttons {
@@ -224,3 +234,7 @@ a.button.is-info {
  .navbar-item {
      color: white;
  }
+
+ #login.navbar-item:hover {
+    color: #860f44;
+}
