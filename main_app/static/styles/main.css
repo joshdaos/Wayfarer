@@ -77,19 +77,12 @@ body {
     margin-left: -210px;
     color: #ff9067;
     font-size: large;
-<<<<<<< HEAD
-    font-weight: bold;  
-=======
     font-weight: bold;
->>>>>>> josh
 }
 
 #login.navbar-item:hover {
     color: darkred;
 }
-.navbar-item:hover {
-    color: darkred;
- }
 
  .navbar-item {
     color:white;
