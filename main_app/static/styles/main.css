@@ -209,6 +209,14 @@ a.button.is-info {
     background-color: black;
 }
 
+.navbar-item {
+    color: white;
+}
+
+.topic_container {
+    background: #ffffff;
+    
+}
 .login-header {
     display: flex;
     align-content: left;
@@ -231,6 +239,7 @@ a.button.is-info {
     background-color: white;
  }
 
+<<<<<<< HEAD
  .navbar-item {
      color: white;
  }
@@ -238,3 +247,5 @@ a.button.is-info {
  #login.navbar-item:hover {
     color: #860f44;
 }
+=======
+>>>>>>> ohz_branch
