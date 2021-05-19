@@ -77,7 +77,11 @@ body {
     margin-left: -210px;
     color: #ff9067;
     font-size: large;
+<<<<<<< HEAD
     font-weight: bold;  
+=======
+    font-weight: bold;
+>>>>>>> josh
 }
 
 #login.navbar-item:hover {
@@ -157,17 +161,20 @@ body {
     color: #860f44;
 }
 
-.post_content {
+.content-container {
     font-size: larger;
     margin: 20px 0 0 0;
     max-width: 400px;
     color: #860f44;
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
 }
 
 .post_image {
     max-width: 500px;
     max-height: 500px;
-    border-radius: 10px;
+    border-radius: 20px;
     margin: 20px 0;
 }
 
@@ -175,6 +182,12 @@ body {
     font-size: xx-large;
     font-weight: bold;
     margin: 20px 0 0 0;
+}
+
+.post_user {
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #ff9067;
 }
 
 .buttons {
