@@ -233,3 +233,11 @@ a.button.is-info {
      color: white;
  }
 
+ #login.navbar-item:hover {
+    color: darkred;
+}
+
+.navbar-item:hover {
+    color: darkred;
+}
+
