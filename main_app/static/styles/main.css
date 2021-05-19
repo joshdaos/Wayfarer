@@ -37,6 +37,7 @@ body {
 .webtitle {
     font-weight: bold;
     font-family: 'Ubuntu', sans;
+   
 }
 
 .navbar_img {
@@ -140,6 +141,7 @@ body {
     justify-content: space-evenly;
     align-items: center;
     font-family: 'Nunito', sans-serif;
+    font-weight: bold;
 }
 
 .post_info {
@@ -209,6 +211,14 @@ a.button.is-info {
     background-color: black;
 }
 
+.navbar-item {
+    color: white;
+}
+
+.topic_container {
+    background: #ffffff;
+    
+}
 .login-header {
     display: flex;
     align-content: left;
@@ -231,6 +241,9 @@ a.button.is-info {
     background-color: white;
  }
 
+ #login.navbar-item:hover {
+    color: darkred;
+}
  .navbar-item {
      color: white;
  }
