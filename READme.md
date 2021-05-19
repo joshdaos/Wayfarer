@@ -44,6 +44,7 @@ View post "show" pages with title, author, and content.
 ![Screen Shot 2021-05-18 at 7 13 37 PM](https://media.git.generalassemb.ly/user/35030/files/2896f700-b80d-11eb-9905-ab9ea6aeb692)
 
 ![Screen Shot 2021-05-18 at 7 18 54 PM](https://media.git.generalassemb.ly/user/35030/files/e4f0bd00-b80d-11eb-9749-8f0f31f0d548)
+
 - Richard 
 
 ![Screen Shot 2021-05-18 at 7 03 05 PM](https://media.git.generalassemb.ly/user/35030/files/4d8b6a00-b80d-11eb-9082-ee3b4247fec9)
