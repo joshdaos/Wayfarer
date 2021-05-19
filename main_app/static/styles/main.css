@@ -175,15 +175,8 @@ body {
     font-size: xx-large;
     font-weight: bold;
     margin: 20px 0 0 0;
-    color:darkred;
 }
 
-b {
-    color: darkred;
-}
-a {
-    color: darkred;
-}
 .buttons {
     padding-left: 50px;
 }
@@ -235,8 +228,7 @@ a.button.is-info {
  .topic_container {
     background-color: white;
  }
- .navbar-item:hover {
-    color:darkred;
- }
-
+.post-title {
+    color: darkred;
+}
  
