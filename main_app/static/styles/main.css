@@ -40,7 +40,6 @@ body {
    
 }
 
-
 .navbar_img {
     height: auto;
     width: auto;
@@ -70,7 +69,6 @@ body {
     margin: 30px;
     color: #860f44;
     font-weight: bold;
-
 }
 
 .topic {    
@@ -80,7 +78,11 @@ body {
     margin-left: -210px;
     color: #ff9067;
     font-size: large;
-    font-weight: bold;
+    font-weight: bold;  
+}
+
+#login.navbar-item:hover{
+    color:darkred;
 }
 
 .home-page-images {
@@ -246,3 +248,6 @@ a.button.is-info {
      color: white;
  }
 
+ #login.navbar-item:hover {
+    color: #860f44;
+}
