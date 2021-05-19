@@ -30,11 +30,12 @@
                 <a class="navbar-item" href="/profile">Profile</a>
                 <a class="navbar-item" href="{% url 'logout' %}">Logout</a>
             </div>
-            {% else %}
-            <div class="navbar-menu navbar-end">
-                <a class="navbar-item" id="login">Log In/Sign Up</a>
-            </div>
-            {% endif %}
+        </div>
+        {% else %}
+        <div class="navbar-menu navbar-end">
+            <a class="navbar-item" id="login">Log In/Sign Up</a>
+        </div>
+        {% endif %}
         </div>
 
         <!-- adding Modal -->

@@ -80,10 +80,17 @@ body {
     font-weight: bold;  
 }
 
-#login.navbar-item:hover{
-    color:darkred;
+#login.navbar-item:hover {
+    color: darkred;
 }
+.navbar-item:hover {
+    color: darkred;
+ }
 
+ .navbar-item {
+    color:white;
+ }
+ 
 .home-page-images {
     margin-top: 50px;
     width: auto;
@@ -168,8 +175,15 @@ body {
     font-size: xx-large;
     font-weight: bold;
     margin: 20px 0 0 0;
+    color:darkred;
 }
 
+b {
+    color: darkred;
+}
+a {
+    color: darkred;
+}
 .buttons {
     padding-left: 50px;
 }
@@ -221,7 +235,8 @@ a.button.is-info {
  .topic_container {
     background-color: white;
  }
-
- .navbar-item {
-     color: white;
+ .navbar-item:hover {
+    color:darkred;
  }
+
+ 
