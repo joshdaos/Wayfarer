@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1 class="profile_title">{{user.username}}'s Profile</h1>
+<div class="profile_container">
+    <div class="gallery">
+        <a href="">
+            <div class="card">
+                <div class="card-image">
+                    <figure class="image is-square">
+                        <img class="profileimage" src="{{profile.image}}" alt="{{profile.name}}" />
+                    </figure>
+                </div>
+                <div class="card-header">
+                    <ul>
+                        <li class="card-header-title">{{profile.name}}</li>
+                        <li class="card-header-title">Current City: {{profile.currentcity}}</li>
+                        <li class="card-header-title">Join Date: {{profile.join_date}}</li>
+                    </ul>
+                    <div class="buttons">
+                        <!-- just like how we added the artist detail link we can do the same thing for update -->
+                        <a href="{% url 'profile_update' profile.pk %}" class="button is-info">
+                            <span class="icon">
+                                <i class="fas fa-edit"></i>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </div>
+    <div class="posts">
+        <h3>Posts</h3>
+        {% for post in profile.posts.all %}
+        <div>
+            <ul>
+                <a href="{% url 'post_detail' post.pk %}">
+                    <li><b class=post-title>{{post.title}}</b></li>
+                </a>
+            </ul>
+        </div>
+        {% empty %}
+        <h3>No Posts Available Yet</h3>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}
