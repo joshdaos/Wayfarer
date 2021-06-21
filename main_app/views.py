@@ -70,7 +70,6 @@ class Signup(View):
         image = request.POST.get("image")
     
         if form.is_valid():
-            
             user = form.save()
             UserProfile.objects.create(name=name, currentcity=currentcity, image=image, user=user)
             login(request, user)
