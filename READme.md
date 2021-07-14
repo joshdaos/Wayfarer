@@ -1,5 +1,7 @@
 # Project Wayfarer- General Assembelers (Richard, Josh, Kimo, Ohz)
 
+Click [Here](https://project2-wayfarer.herokuapp.com/) for a demo!
+
 ## Brief
 We have been commissioned to build a travel community, code-named Project Wayfarer for now, for users to share tips (AKA posts) about their favorite locations around the world.
 
